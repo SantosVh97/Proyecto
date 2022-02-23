@@ -13,6 +13,45 @@
 	box-sizing: border-box;
 }
 
+#button {
+	background-color: rgb(91, 91, 214);
+}
+
+#searchbarcontainer {
+    font-family: sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#searchbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: 0px;
+    width: 480px;
+    padding-left: 10px;
+    padding-right: 75px;
+    border-radius: 15px;
+    border: 2px solid #dddddd;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+	font-style: italic;
+	text-decoration-color: #424244;
+}
+
+#searchbar:hover {
+    box-shadow: 0 0 15px rgb(120, 179, 247);
+}
+
+.jumbotron{
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%), url(./img/header.jpg);
+	width: 800px;
+	height: 1000px;
+	
+}
+
+
+
 body {
 	background: #1D202B;
 	color: #fff;
@@ -91,4 +130,24 @@ body {
 
 @media screen and (max-width: 600px) {
 
+}
+
+#footer-content {
+    align-items: center;
+    text-align: 30px;
+    margin: 28px;
+    margin-bottom: 10px;
+    margin-top: 20%;
+    justify-content: flex-end;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    background: black;
+    border-top: 1px solid rgb(185, 179, 179);
+}
+
+#footer-content a {
+    margin-right: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
 }
