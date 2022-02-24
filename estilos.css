@@ -1,7 +1,7 @@
 body {
 	color: rgb(0, 0, 0);
 	font-family: 'Roboto', sans-serif;
-	background-image: linear-gradient(to top, #03095e 0%, #000000 100%);
+
 }
 
 * {
@@ -117,6 +117,14 @@ body {
 	left: 50px;
 }
 
+.cta {
+	display: inline-block;
+	text-decoration: none;
+	background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+	padding: 12px 15px;
+	border-radius: 8px;
+	color: #fff;
+}
 
 .contenedor {
 	width: 90%;
@@ -146,9 +154,16 @@ body {
 	gap: 20px;
 }
 
+.content-cards{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
 .card {
 	/* width: 33.33%; */
-	border-radius: 10px;
+	/* border-radius: 10px;
 	width: 380px;
 	min-height: 400px;
 	font-weight: bold;
@@ -156,8 +171,36 @@ body {
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
-	background-position: center center;
+	background-position: center center; */
 	/* width: calc(33.3% - 20px); */
+	width: 30%;
+	text-align: center;
+	height: 300px;
+	box-shadow: 0 0 3px 0 rgb(0, 0, .5);
+	transform: scale(1);
+	transition: transform 0.6s;
+	border-top: 400px;
+	border-bottom: 500px;
+	right: 10px;
+	top: 120px;
+	background-color: #fff;
+}
+
+.card:hover{
+	box-shadow: 0 0 6px 0 rgb(0, 0, .5);
+	cursor: pointer;
+}
+
+.card i{
+	margin: 30px 0 20px 0;
+	color: #bac8e0;
+	font-size: 50px;
+}
+
+.card p{
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 10px;
 }
 
 .card .textos {
@@ -169,35 +212,28 @@ body {
 	grid-template-rows: 1fr auto; */
 }
 
+/* info2 */
 
-@media screen and (max-width: 900px) {
-	
+.last-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 40px;
 }
 
-@media screen and (max-width: 700px) {
-	
+.last-section img{
+	width: 48%;
 }
 
-@media screen and (max-width: 600px) {
-
+.last-section .contenedor-textos-main{
+	width: 40%;
+	top: 900px;
+	justify-content: flex-end;
 }
 
-#footer-content {
-    align-items: center;
-    text-align: 30px;
-    margin: 28px;
-    margin-bottom: 10px;
-    margin-top: 20%;
-    justify-content: flex-end;
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-    background: black;
-    border-top: 1px solid rgb(185, 179, 179);
-}
-
-#footer-content a {
-    margin-right: 70px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+.last-section .contenedor-textos-main>P{
+	text-align: right;
+	justify-content: center;
+	gap: 20PX;
+	top: 400px;
 }
